@@ -1,59 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Galleria slideshow site</title>
-</head>
-<body>
-  Start slideshow
-
-  Starry Night
-  Vincent Van Gogh
-
-  Girl with a Pearl Earring
-  Johannes Vermeer
-
-  Guernica
-  Pablo Picasso
-
-  Penitent Magdalene
-  Artemisia Gentileschi
-
-  The Storm on the Sea of Galilee
-  Rembrandt
-
-  The Great Wave off Kanagawa
-  Hokusai
-
-  Van Gogh Self-portrait
-  Vincent Van Gogh
-
-  The Sleeping Gypsy
-  Henri Rousseau
-
-  Lady with an Ermine
-  Leonardo da Vinci
-
-  The Night Café
-  Vincent Van Gogh
-
-  The Basket of Apples
-  Paul Cézanne
-
-  The Boy in the Red Vest
-  Paul Cézanne
-
-  Arnolfini Portrait
-  Jan van Eyck
-
-  Mona Lisa
-  Leonardo da Vinci
-
-  The Swing
-  Jean-Honoré Fragonard
-</body>
+    <title>Galleria slideshow site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container" id="main-container">
+      <nav class="navbar" id="navbar">
+        <img src="./Assets/assets/shared/logo.svg" alt="brand logo" />
+        <button class="slideshow" id="slideshow">Start slideshow</button>
+      </nav>
+      <div class="gallery">
+        <div class="h-1">
+          <img
+            src="./Assets/assets/starry-night/gallery.jpg"
+            alt="starry night by Vincent Van Gogh"
+            class="painting"
+          />
+          <article>
+            <h1>Starry Night</h1>
+            <p>Vincent Van Gogh</p>
+          </article>
+        </div>
+        <div class="h-3">
+          <img
+            src="./Assets/assets/girl-with-pearl-earring/gallery.jpg"
+            alt="girl with pearl earring by Johannes Vermeer"
+            class="painting"
+          />
+          <article>
+            <h1>Girl with a Pearl Earring</h1>
+            <p>Johannes Vermeer</p>
+          </article>
+        </div>
+        <div class="h-2">
+          <img
+            src="./Assets/assets/guernica/gallery.jpg"
+            alt="guernica by Pablo Picasso"
+            class="painting"
+          />
+          <article>
+            <h1>Guernica</h1>
+            <p>Pablo Picasso</p>
+          </article>
+        </div>
+        <div class="h-1">
+          <img
+            src="./Assets/assets/penitent-magdalene/gallery.jpg"
+            alt="penitent magdalene by Artemisia Gentileschi"
+            class="painting"
+          />
+          <article>
+            <h1>Penitent Magdalene</h1>
+            <p>Artemisia Gentileschi</p>
+          </article>
+        </div>
+        <div class="h-2">
+          <img
+            src="./Assets/assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
+            alt="the storm on the sea of galilee by Rembrandt"
+            class="painting"
+          />
+          <article>
+            <h1>The Storm on the Sea of Galilee</h1>
+            <p>Rembrandt</p>
+          </article>
+        </div>
+        <div class="h-1">
+          <img
+            src="./Assets/assets/the-great-wave-off-kanagawa/gallery.jpg"
+            alt=" the great wave off kanagawa by  Hokusai"
+            class="painting"
+          />
+          <article>
+            <h1>The Great Wave off Kanagawa</h1>
+            <p>Hokusai</p>
+          </article>
+        </div>
+        <div class="h-4">
+          <img
+            src="./Assets/assets/van-gogh-self-portrait/gallery.jpg"
+            alt="van gogh self portrait by Vincent Van Gogh"
+            class="painting"
+          />
+          <article>
+            <h1>Van Gogh Self-portrait</h1>
+            <p>Vincent Van Gogh</p>
+          </article>
+        </div>
+        <div class="h-1">
+          <img
+            src="./Assets/assets/the-sleeping-gypsy/gallery.jpg"
+            alt="the sleeping gypsy by Henri Rousseau"
+            class="painting"
+          />
+          <article>
+            <h1>The Sleeping Gypsy</h1>
+            <p>Henri Rousseau</p>
+          </article>
+        </div>
+        <div class="h-3">
+          <img
+            src="./Assets/assets/lady-with-an-ermine/gallery.jpg"
+            alt="lady with an ermine by Leonardo da Vinci"
+            class="painting"
+          />
+          <article>
+            <h1>Lady with an Ermine</h1>
+            <p>Leonardo da Vinci</p>
+          </article>
+        </div>
+        <div class="h-1">
+          <img
+            src="./Assets/assets/the-night-cafe/gallery.jpg"
+            alt="the night cafe by Vincent Van Gogh"
+            class="painting"
+          />
+          <article>
+            <h1>The Night Café</h1>
+            <p>Vincent Van Gogh</p>
+          </article>
+        </div>
+        <div class="h-3">
+          <img
+            src="./Assets/assets/the-basket-of-apples/gallery.jpg"
+            alt="the basket of apples by Paul Cézanne"
+            class="painting"
+          />
+          <article>
+            <h1>The Basket of Apples</h1>
+            <p>Paul Cézanne</p>
+          </article>
+        </div>
+        <div class="h-1">
+          <img
+            src="./Assets/assets/the-boy-in-the-red-vest/gallery.jpg"
+            alt="the boy in the red vest by Edward Hopper"
+            class="painting"
+          />
+          <article>
+            <h1>The Boy in the Red Vest</h1>
+            <p>Edward Hopper</p>
+          </article>
+        </div>
+        <div class="h-2">
+          <img
+            src="./Assets/assets/arnolfini-portrait/gallery.jpg"
+            alt="arnolfini portrait by Jan van Eyck"
+            class="painting"
+          />
+          <article>
+            <h1>Arnolfini Portrait</h1>
+            <p>Jan van Eyck</p>
+          </article>
+        </div>
+        <div class="h-2">
+          <img
+            src="./Assets/assets/mona-lisa/gallery.jpg"
+            alt="Mona Lisa by Leonardo da Vinci"
+            class="painting"
+          />
+          <article>
+            <h1>Mona Lisa</h1>
+            <p>Leonardo da Vinci</p>
+          </article>
+        </div>
+        <div class="h-2">
+          <img
+            src="./Assets/assets/the-swing/gallery.jpg"
+            alt="the swing by Jean-Honoré Fragonard"
+            class="painting"
+          />
+          <article>
+            <h1>The Swing</h1>
+            <p>Jean-Honoré Fragonard</p>
+          </article>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
