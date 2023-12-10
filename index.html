@@ -11,9 +11,10 @@
     <main class="main-container" id="main-container">
       <nav class="navbar" id="navbar">
         <img src="./Assets/assets/shared/logo.svg" alt="brand logo" />
-        <button class="slideshow" id="slideshow">Start slideshow</button>
+        <a href="#" class="slideshow" id="slideshow">Start slideshow</a>
       </nav>
-      <div class="gallery">
+      <hr />
+      <div class="gallery hidden">
         <div class="h-1">
           <img
             src="./Assets/assets/starry-night/gallery.jpg"
@@ -21,8 +22,8 @@
             class="painting"
           />
           <article>
-            <h1>Starry Night</h1>
-            <p>Vincent Van Gogh</p>
+            <h2>Starry Night</h2>
+            <small>Vincent Van Gogh</small>
           </article>
         </div>
         <div class="h-3">
@@ -32,8 +33,8 @@
             class="painting"
           />
           <article>
-            <h1>Girl with a Pearl Earring</h1>
-            <p>Johannes Vermeer</p>
+            <h2>Girl with a Pearl Earring</h2>
+            <small>Johannes Vermeer</small>
           </article>
         </div>
         <div class="h-2">
@@ -43,8 +44,8 @@
             class="painting"
           />
           <article>
-            <h1>Guernica</h1>
-            <p>Pablo Picasso</p>
+            <h2>Guernica</h2>
+            <small>Pablo Picasso</small>
           </article>
         </div>
         <div class="h-1">
@@ -54,8 +55,8 @@
             class="painting"
           />
           <article>
-            <h1>Penitent Magdalene</h1>
-            <p>Artemisia Gentileschi</p>
+            <h2>Penitent Magdalene</h2>
+            <small>Artemisia Gentileschi</small>
           </article>
         </div>
         <div class="h-2">
@@ -65,8 +66,8 @@
             class="painting"
           />
           <article>
-            <h1>The Storm on the Sea of Galilee</h1>
-            <p>Rembrandt</p>
+            <h2>The Storm on the Sea of Galilee</h2>
+            <small>Rembrandt</small>
           </article>
         </div>
         <div class="h-1">
@@ -76,8 +77,8 @@
             class="painting"
           />
           <article>
-            <h1>The Great Wave off Kanagawa</h1>
-            <p>Hokusai</p>
+            <h2>The Great Wave off Kanagawa</h2>
+            <small>Hokusai</small>
           </article>
         </div>
         <div class="h-4">
@@ -87,8 +88,8 @@
             class="painting"
           />
           <article>
-            <h1>Van Gogh Self-portrait</h1>
-            <p>Vincent Van Gogh</p>
+            <h2>Van Gogh Self-portrait</h2>
+            <small>Vincent Van Gogh</small>
           </article>
         </div>
         <div class="h-1">
@@ -98,8 +99,8 @@
             class="painting"
           />
           <article>
-            <h1>The Sleeping Gypsy</h1>
-            <p>Henri Rousseau</p>
+            <h2>The Sleeping Gypsy</h2>
+            <small>Henri Rousseau</small>
           </article>
         </div>
         <div class="h-3">
@@ -109,8 +110,8 @@
             class="painting"
           />
           <article>
-            <h1>Lady with an Ermine</h1>
-            <p>Leonardo da Vinci</p>
+            <h2>Lady with an Ermine</h2>
+            <small>Leonardo da Vinci</small>
           </article>
         </div>
         <div class="h-1">
@@ -120,8 +121,8 @@
             class="painting"
           />
           <article>
-            <h1>The Night Café</h1>
-            <p>Vincent Van Gogh</p>
+            <h2>The Night Café</h2>
+            <small>Vincent Van Gogh</small>
           </article>
         </div>
         <div class="h-3">
@@ -131,8 +132,8 @@
             class="painting"
           />
           <article>
-            <h1>The Basket of Apples</h1>
-            <p>Paul Cézanne</p>
+            <h2>The Basket of Apples</h2>
+            <small>Paul Cézanne</small>
           </article>
         </div>
         <div class="h-1">
@@ -142,8 +143,8 @@
             class="painting"
           />
           <article>
-            <h1>The Boy in the Red Vest</h1>
-            <p>Edward Hopper</p>
+            <h2>The Boy in the Red Vest</h2>
+            <small>Edward Hopper</small>
           </article>
         </div>
         <div class="h-2">
@@ -153,8 +154,8 @@
             class="painting"
           />
           <article>
-            <h1>Arnolfini Portrait</h1>
-            <p>Jan van Eyck</p>
+            <h2>Arnolfini Portrait</h2>
+            <small>Jan van Eyck</small>
           </article>
         </div>
         <div class="h-2">
@@ -164,8 +165,8 @@
             class="painting"
           />
           <article>
-            <h1>Mona Lisa</h1>
-            <p>Leonardo da Vinci</p>
+            <h2>Mona Lisa</h2>
+            <small>Leonardo da Vinci</small>
           </article>
         </div>
         <div class="h-2">
@@ -175,11 +176,41 @@
             class="painting"
           />
           <article>
-            <h1>The Swing</h1>
-            <p>Jean-Honoré Fragonard</p>
+            <h2>The Swing</h2>
+            <small>Jean-Honoré Fragonard</small>
+          </article>
+        </div>
+      </div>
+      <div class="painting-slide">
+        <section class="painting-info">
+          <article class="the-artbox">
+            <img
+              src="Assets/assets/starry-night/hero-large.jpg"
+              alt="Starry night by Vincent"
+            />
+          </article>
+          <article></article>
+          <article class="the-artdetails"></article>
+        </section>
+        <div class="slider-bar">
+          <div class="slider"></div>
+        </div>
+        <div class="details-slide">
+          <article class="current-painting">
+            <h3>Starry Night</h3>
+            <small>Vincent van Gogh</small>
+          </article>
+          <article class="buttons-slide">
+            <button class="prev-slide btn">
+              <img src="Assets/assets/shared/icon-back-button.svg" alt="" />
+            </button>
+            <button class="next-slide btn">
+              <img src="Assets/assets/shared/icon-next-button.svg" alt="" />
+            </button>
           </article>
         </div>
       </div>
     </main>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
