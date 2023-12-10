@@ -270,9 +270,13 @@ a:hover {
   gap: 20px;
 }
 .btn {
+  cursor: pointer;
   background-color: var(--background-main);
   padding: 2px;
   border: none;
+}
+.btn:hover {
+  transform: scale(0.9);
 }
 
 @media screen and (max-width: 1350px) {
