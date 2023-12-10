@@ -10,11 +10,15 @@
   <body>
     <main class="main-container" id="main-container">
       <nav class="navbar" id="navbar">
-        <img src="./Assets/assets/shared/logo.svg" alt="brand logo" />
+        <img
+          src="./Assets/assets/shared/logo.svg"
+          alt="brand logo"
+          id="brand-logo"
+        />
         <a href="#" class="slideshow" id="slideshow">Start slideshow</a>
       </nav>
       <hr />
-      <div class="gallery hidden">
+      <div class="gallery" id="gallery">
         <div class="h-1">
           <img
             src="./Assets/assets/starry-night/gallery.jpg"
@@ -181,20 +185,20 @@
           </article>
         </div>
       </div>
-      <div class="painting-slide">
+      <div class="painting-slide hidden">
         <section class="painting-info">
           <article class="the-artbox">
             <img
               src="Assets/assets/starry-night/hero-large.jpg"
               alt="Starry night by Vincent"
             />
-            <div class="modal-button">
+            <button class="modal-button">
               <img
                 src="Assets/assets/shared/icon-view-image.svg"
                 alt="view image"
               />
-              <p>VIEW IMAGE</p>
-            </div>
+              VIEW IMAGE
+            </button>
           </article>
           <article class="the-artpainter">
             <div class="the-artName">
