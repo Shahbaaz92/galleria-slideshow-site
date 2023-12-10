@@ -27,6 +27,7 @@ body {
 }
 hr {
   margin-bottom: 40px;
+  border: none;
   border-top: 1px solid var(--line-color);
   height: 100%;
   width: 100%;
@@ -47,6 +48,12 @@ h2 {
 }
 h3 {
   font-size: 18px;
+}
+p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--text-primary);
 }
 small {
   color: var(--background-main);
@@ -136,8 +143,9 @@ a:hover {
 
 .painting-info {
   width: 100%;
-  height: 85%;
+  height: 80%;
   display: flex;
+  margin-bottom: 60px;
 }
 .the-artbox {
   width: 35%;
@@ -200,8 +208,29 @@ a:hover {
 .the-artdetails {
   width: 35%;
   height: 100%;
-  background-color: lightgreen;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
 }
+.display {
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150px;
+  color: #f3f3f3;
+}
+.about-art {
+  margin-top: -40px;
+  padding-right: 100px;
+}
+.art-source {
+  font-size: 9px;
+  letter-spacing: 1.929px;
+  text-decoration-line: underline;
+}
+
 .slider-bar {
   height: 1px;
   width: 100%;
@@ -214,7 +243,7 @@ a:hover {
   background-color: var(--text-secondary);
 }
 .details-slide {
-  height: 15%;
+  height: 11%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -238,4 +267,23 @@ a:hover {
   background-color: var(--background-main);
   padding: 2px;
   border: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .display {
+    font-size: 170px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+  .the-artName {
+    padding: 20px;
+    padding-top: 0;
+  }
+  .display {
+    font-size: 150px;
+  }
 }
