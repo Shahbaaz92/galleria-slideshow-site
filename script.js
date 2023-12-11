@@ -64,11 +64,7 @@ async function getData() {
           VIEW IMAGE
         </button>
         <dialog data-modal class='modal' data-close-modal>    
-          <img src=${
-            window.innerWidth < 725
-              ? currentSLide.images.thumbnail
-              : currentSLide.images.hero.small
-          } >
+          <img src=${currentSLide.images.hero.small} >
           </dialog>   
       </article>
       <article class="the-artpainter">
