@@ -6,7 +6,7 @@ const nextSlide = document.getElementById("next-slide");
 const prevSlide = document.getElementById("prev-slide");
 const paintingSlideSub = document.getElementById("painting-currentSlide");
 const paintings = document.querySelectorAll(".painting");
-
+console.log(window.innerWidth);
 brandLogo.addEventListener("click", function () {
   gallery.classList.remove("hidden");
   paintingSlide.classList.add("hidden");
@@ -44,7 +44,6 @@ prevSlide.addEventListener("click", function () {
 async function getData() {
   let response = await fetch("./data.json");
   let data = await response.json();
-  console.log(data);
 
   for (let i = 0; i < data.length; i++) {
     let currentSLide = data[currentIndex];
@@ -64,9 +63,12 @@ async function getData() {
           />
           VIEW IMAGE
         </button>
-        <dialog data-modal class='modal'> 
-         <a class='close-modal' data-close-modal>Close</a>
-          <img src=${currentSLide.images.hero.large}>
+        <dialog data-modal class='modal' data-close-modal>    
+          <img src=${
+            window.innerWidth < 725
+              ? currentSLide.images.thumbnail
+              : currentSLide.images.hero.small
+          } >
           </dialog>   
       </article>
       <article class="the-artpainter">
